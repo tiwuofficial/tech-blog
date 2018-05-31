@@ -1,3 +1,3 @@
 import Butter from 'buttercms';
 
-export default Butter(process.env.BUTTER_CMS_API);
+export default Butter('115c59b28082638b2787f7194daac721b2830dd7');
