@@ -3,7 +3,7 @@
     <h1>{{ page_title }}</h1>
     <div v-for="(post,index) in posts" :key="post.slug + '_' + index">
       <router-link :to="'/blog/' + post.slug">
-        <article class="media">
+        <article>
           <h2>{{ post.title }}</h2>
           <figure>
             <img v-if="post.featured_image" :src="post.featured_image" alt="">
@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
   article {
     width: 400px;
   }
