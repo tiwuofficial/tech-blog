@@ -19,6 +19,11 @@ const router = new Router({
   ]
 });
 
+
+router.afterEach((to) => {
+  gtag('config', 'UA-68543693-5', {'page_path': to.path });
+})
+
 new Vue({
   el: '#app',
   router: router,
