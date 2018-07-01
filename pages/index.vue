@@ -1,6 +1,6 @@
 <template>
-    <h1>ブログ</h1>
     <div id="blog-home">
+        <h1>ブログ</h1>
         <div v-for="(post,index) in posts" :key="post.uid + '_' + index">
             <nuxt-link :to="'/blog/' + post.uid">
                 <article>
